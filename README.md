@@ -1,5 +1,3 @@
-
-
 # pdd24.com solver
 
 Автоматическое решение внутреннего экзамена ПДД на http://www.pdd24.com/for-school
@@ -9,8 +7,8 @@
 Чтобы клонировать репозиторий, выполните следующие команды:
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/xxspell/pdd24com-solver.git
+cd pdd24com-solver
 ```
 
 ## Установка виртуального окружения (venv)
