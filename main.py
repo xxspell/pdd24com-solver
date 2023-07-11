@@ -11,6 +11,11 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 from dotenv import load_dotenv
 import os
+import warnings
+
+# Знаю, что может скрыть другие потенциально важные сообщения об ошибках
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+warnings.filterwarnings("ignore", category=ResourceWarning)
 
 load_dotenv() # Подгрузка переменных окружений
 
@@ -43,9 +48,10 @@ wait = WebDriverWait(driver, 50)
 counter = 0
 while True:    
     
-    wait_time = random.randint(10, 50)
-    time.sleep(wait_time)
+    wait_time = random.randint(30, 90)
     print(f"Ожидаю {wait_time} сек.")
+    time.sleep(wait_time)
+    
     counter += 1
     print(f"Начинаю решать. Вопрос - {counter}")
     
@@ -108,7 +114,7 @@ while True:
         driver.quit()
         exit()
     except NoSuchElementException:
-        print("Элемент не найден")
+        print("")
     
 
         
