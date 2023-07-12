@@ -14,7 +14,7 @@ import os
 import warnings
 
 # Знаю, что может скрыть другие потенциально важные сообщения об ошибках
-warnings.filterwarnings("ignore", category=DeprecationWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="urllib3")
 warnings.filterwarnings("ignore", category=ResourceWarning)
 
 load_dotenv() # Подгрузка переменных окружений
@@ -48,7 +48,7 @@ wait = WebDriverWait(driver, 50)
 counter = 0
 while True:    
     
-    wait_time = random.randint(30, 90)
+    wait_time = random.randint(15, 65)
     print(f"Ожидаю {wait_time} сек.")
     time.sleep(wait_time)
     

@@ -15,9 +15,16 @@ cd pdd24com-solver
 
 Для создания и активации виртуального окружения (venv) выполните следующие команды:
 
-```bash
+_Для Linux:_
+```bash linux
 python3 -m venv venv
 source venv/bin/activate
+```
+
+_Для Windows:_
+```bash windows
+python -m venv venv
+venv/Scripts/activate
 ```
 
 ## Установка зависимостей
